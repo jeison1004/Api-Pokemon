@@ -1,0 +1,32 @@
+{
+    "pokemon": [
+      {
+        "name": "Bulbasaur",
+        "sprites": {
+          "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+        },
+        "abilities": ["Overgrow", "Chlorophyll"]
+      },
+      {
+        "name": "Charmander",
+        "sprites": {
+          "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+        },
+        "abilities": ["Blaze", "Solar Power"]
+      },
+      {
+        "name": "Squirtle",
+        "sprites": {
+          "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+        },
+        "abilities": ["Torrent", "Rain Dish"]
+      },
+      {
+        "name": "Pikachu",
+        "sprites": {
+          "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+        },
+        "abilities": ["Static", "Lightning Rod"]
+      }
+    ]
+  }
