@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <script
-            src="https://kit.fontawesome.com/1203f5f99f.js"
-            crossorigin="anonymous"
-        ></script>
-        <title>PokeAPI</title>
-    </head>
-    <body>
-        <div>
-            <img class="logo" src="img/logo.png" alt="logo">
-        </div>
-        <div class="barra_busqueda">
-            <input type="text" id="entrada" placeholder="Pikachu..." />
-            <button id="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <div class="nombre">
-            <p id="nombre_pokemon"></p>
-            <p id="id_pokemon"></p>
-        </div>
-        <div class="resultados">
-            <div class="imagen">
-                <img id="imagen_pokemon" src="img/silueta.png" alt="Imagen">
-            </div>
-            <div id="tipos" class="tipos">
-                <div class="silueta"></div>
-                <div class="silueta"></div>
-            </div>
-        </div>
-        <script src="scripts.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/1203f5f99f.js" crossorigin="anonymous"></script>
+  <title>PokeAPI</title>
+</head>
+<body>
+  <div>
+    <img class="logo" src="img/logo.png" alt="logo">
+  </div>
+
+  <div class="barra_busqueda">
+    <input type="text" id="entrada" placeholder="Pikachu..." />
+    <button id="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
+
+  <div class="nombre">
+    <p id="nombre_pokemon"></p>
+    <p id="id_pokemon"></p>
+  </div>
+
+  <div class="resultados">
+    <div class="imagen">
+      <img id="imagen_pokemon" src="img/silueta.png" alt="Imagen">
+    </div>
+    <!-- ✅ Este id debe llamarse "tipos" porque así lo espera el JS -->
+    <div id="tipos" class="tipos">
+      <div class="silueta"></div>
+      <div class="silueta"></div>
+    </div>
+  </div>
+
+  <!-- Contenedor de habilidades -->
+  <div id="habilidades_del_pokemon" class="habilidades"></div>
+  
+  <!-- Formulario CRUD -->
+  <div class="form-container">
+    <h2 id="titulo_formulario">Formulario Pokémon</h2>
+    <form id="pokemonForm">
+      <label>Nombre:
+        <input type="text" id="nombre_formulario" name="nombre" required>
+      </label>
+      <label>Imagen URL:
+        <input type="text" id="imagen_formulario" name="imagen" required>
+      </label>
+      <label>Tipos (separados por comas):
+        <input type="text" id="tipos_formulario" name="tipos" required>
+      </label>
+    </form>
+    <div class="botones-formulario">
+      <button id="añadir">Añadir Pokémon</button>
+      <button id="editar">Editar Pokémon</button>
+      <button id="guardar">Guardar</button>
+      <button id="eliminar">Eliminar Pokémon</button>
+      <button id="cancelar">Cancelar</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
 </html>

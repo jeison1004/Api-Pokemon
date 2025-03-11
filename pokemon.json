@@ -1,32 +1,624 @@
 {
-    "pokemon": [
-      {
-        "name": "Bulbasaur",
-        "sprites": {
-          "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
-        },
-        "abilities": ["Overgrow", "Chlorophyll"]
+  "pokemon": [
+    {
+      "name": "bulbasaur",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png"
       },
-      {
-        "name": "Charmander",
-        "sprites": {
-          "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
-        },
-        "abilities": ["Blaze", "Solar Power"]
+      "abilities": [],
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "height": 7,
+      "weight": 69
+    },
+    {
+      "name": "ivysaur",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/2.png"
       },
-      {
-        "name": "Squirtle",
-        "sprites": {
-          "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
-        },
-        "abilities": ["Torrent", "Rain Dish"]
+      "abilities": [],
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "height": 10,
+      "weight": 130
+    },
+    {
+      "name": "venusaur",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/3.png"
       },
-      {
-        "name": "Pikachu",
-        "sprites": {
-          "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
-        },
-        "abilities": ["Static", "Lightning Rod"]
-      }
-    ]
-  }
+      "abilities": [],
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "height": 20,
+      "weight": 1000
+    },
+    {
+      "name": "charmander",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/4.png"
+      },
+      "abilities": [],
+      "types": [
+        "fire"
+      ],
+      "height": 6,
+      "weight": 85
+    },
+    {
+      "name": "charmeleon",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/5.png"
+      },
+      "abilities": [],
+      "types": [
+        "fire"
+      ],
+      "height": 11,
+      "weight": 190
+    },
+    {
+      "name": "charizard",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/6.png"
+      },
+      "abilities": [],
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "height": 17,
+      "weight": 905
+    },
+    {
+      "name": "squirtle",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/7.png"
+      },
+      "abilities": [],
+      "types": [
+        "water"
+      ],
+      "height": 5,
+      "weight": 90
+    },
+    {
+      "name": "wartortle",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/8.png"
+      },
+      "abilities": [],
+      "types": [
+        "water"
+      ],
+      "height": 10,
+      "weight": 225
+    },
+    {
+      "name": "blastoise",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/9.png"
+      },
+      "abilities": [],
+      "types": [
+        "water"
+      ],
+      "height": 16,
+      "weight": 855
+    },
+    {
+      "name": "caterpie",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10.png"
+      },
+      "abilities": [],
+      "types": [
+        "bug"
+      ],
+      "height": 3,
+      "weight": 29
+    },
+    {
+      "name": "metapod",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/11.png"
+      },
+      "abilities": [],
+      "types": [
+        "bug"
+      ],
+      "height": 7,
+      "weight": 99
+    },
+    {
+      "name": "butterfree",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/12.png"
+      },
+      "abilities": [],
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "height": 11,
+      "weight": 320
+    },
+    {
+      "name": "weedle",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/13.png"
+      },
+      "abilities": [],
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "height": 3,
+      "weight": 32
+    },
+    {
+      "name": "beedrill",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/15.png"
+      },
+      "abilities": [],
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "height": 10,
+      "weight": 295
+    },
+    {
+      "name": "pidgey",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/16.png"
+      },
+      "abilities": [],
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "height": 3,
+      "weight": 18
+    },
+    {
+      "name": "pidgeotto",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/17.png"
+      },
+      "abilities": [],
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "height": 11,
+      "weight": 300
+    },
+    {
+      "name": "pidgeot",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/18.png"
+      },
+      "abilities": [],
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "height": 15,
+      "weight": 395
+    },
+    {
+      "name": "rattata",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/19.png"
+      },
+      "abilities": [],
+      "types": [
+        "normal"
+      ],
+      "height": 3,
+      "weight": 35
+    },
+    {
+      "name": "raticate",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/20.png"
+      },
+      "abilities": [],
+      "types": [
+        "normal"
+      ],
+      "height": 7,
+      "weight": 185
+    },
+    {
+      "name": "fearow",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/22.png"
+      },
+      "abilities": [],
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "height": 12,
+      "weight": 380
+    },
+    {
+      "name": "ekans",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/23.png"
+      },
+      "abilities": [],
+      "types": [
+        "poison"
+      ],
+      "height": 20,
+      "weight": 69
+    },
+    {
+      "name": "arbok",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/24.png"
+      },
+      "abilities": [],
+      "types": [
+        "poison"
+      ],
+      "height": 35,
+      "weight": 650
+    },
+    {
+      "name": "pikachu",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/25.png"
+      },
+      "abilities": [],
+      "types": [
+        "electric"
+      ],
+      "height": 4,
+      "weight": 60
+    },
+    {
+      "name": "raichu",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/26.png"
+      },
+      "abilities": [],
+      "types": [
+        "electric"
+      ],
+      "height": 8,
+      "weight": 300
+    },
+    {
+      "name": "sandshrew",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/27.png"
+      },
+      "abilities": [],
+      "types": [
+        "ground"
+      ],
+      "height": 6,
+      "weight": 120
+    },
+    {
+      "name": "sandslash",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/28.png"
+      },
+      "abilities": [],
+      "types": [
+        "ground"
+      ],
+      "height": 10,
+      "weight": 295
+    },
+    {
+      "name": "nidoran-f",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/29.png"
+      },
+      "abilities": [],
+      "types": [
+        "poison"
+      ],
+      "height": 4,
+      "weight": 70
+    },
+    {
+      "name": "nidorina",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/30.png"
+      },
+      "abilities": [],
+      "types": [
+        "poison"
+      ],
+      "height": 8,
+      "weight": 200
+    },
+    {
+      "name": "nidoqueen",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/31.png"
+      },
+      "abilities": [],
+      "types": [
+        "poison",
+        "ground"
+      ],
+      "height": 13,
+      "weight": 600
+    },
+    {
+      "name": "nidoran-m",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/32.png"
+      },
+      "abilities": [],
+      "types": [
+        "poison"
+      ],
+      "height": 5,
+      "weight": 90
+    },
+    {
+      "name": "nidorino",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/33.png"
+      },
+      "abilities": [],
+      "types": [
+        "poison"
+      ],
+      "height": 9,
+      "weight": 195
+    },
+    {
+      "name": "nidoking",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/34.png"
+      },
+      "abilities": [],
+      "types": [
+        "poison",
+        "ground"
+      ],
+      "height": 14,
+      "weight": 620
+    },
+    {
+      "name": "clefairy",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/35.png"
+      },
+      "abilities": [],
+      "types": [
+        "fairy"
+      ],
+      "height": 6,
+      "weight": 75
+    },
+    {
+      "name": "clefable",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/36.png"
+      },
+      "abilities": [],
+      "types": [
+        "fairy"
+      ],
+      "height": 13,
+      "weight": 400
+    },
+    {
+      "name": "vulpix",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/37.png"
+      },
+      "abilities": [],
+      "types": [
+        "fire"
+      ],
+      "height": 6,
+      "weight": 99
+    },
+    {
+      "name": "ninetales",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/38.png"
+      },
+      "abilities": [],
+      "types": [
+        "fire"
+      ],
+      "height": 11,
+      "weight": 199
+    },
+    {
+      "name": "jigglypuff",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/39.png"
+      },
+      "abilities": [],
+      "types": [
+        "normal",
+        "fairy"
+      ],
+      "height": 5,
+      "weight": 55
+    },
+    {
+      "name": "wigglytuff",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/40.png"
+      },
+      "abilities": [],
+      "types": [
+        "normal",
+        "fairy"
+      ],
+      "height": 10,
+      "weight": 120
+    },
+    {
+      "name": "zubat",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/41.png"
+      },
+      "abilities": [],
+      "types": [
+        "poison",
+        "flying"
+      ],
+      "height": 8,
+      "weight": 75
+    },
+    {
+      "name": "golbat",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/42.png"
+      },
+      "abilities": [],
+      "types": [
+        "poison",
+        "flying"
+      ],
+      "height": 16,
+      "weight": 550
+    },
+    {
+      "name": "oddish",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/43.png"
+      },
+      "abilities": [],
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "height": 5,
+      "weight": 54
+    },
+    {
+      "name": "gloom",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/44.png"
+      },
+      "abilities": [],
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "height": 8,
+      "weight": 86
+    },
+    {
+      "name": "vileplume",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/45.png"
+      },
+      "abilities": [],
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "height": 12,
+      "weight": 186
+    },
+    {
+      "name": "paras",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/46.png"
+      },
+      "abilities": [],
+      "types": [
+        "bug",
+        "grass"
+      ],
+      "height": 3,
+      "weight": 54
+    },
+    {
+      "name": "parasect",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/47.png"
+      },
+      "abilities": [],
+      "types": [
+        "bug",
+        "grass"
+      ],
+      "height": 10,
+      "weight": 295
+    },
+    {
+      "name": "venonat",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/48.png"
+      },
+      "abilities": [],
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "height": 10,
+      "weight": 300
+    },
+    {
+      "name": "venomoth",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/49.png"
+      },
+      "abilities": [],
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "height": 15,
+      "weight": 125
+    },
+    {
+      "name": "diglett",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/50.png"
+      },
+      "abilities": [],
+      "types": [
+        "ground"
+      ],
+      "height": 2,
+      "weight": 8
+    },
+    {
+      "name": "pidgeottoo",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/17.png"
+      },
+      "abilities": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "name": "fearows",
+      "sprites": {
+        "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/22.png"
+      },
+      "abilities": [
+        "normal",
+        "flying"
+      ]
+    }
+  ]
+}

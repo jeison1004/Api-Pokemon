@@ -28,7 +28,7 @@ body {
     max-width: 500px;
 }
 
-input {
+.barra_busqueda input {
     background-color: transparent;
     width: 350px;
     padding: 10px;
@@ -39,7 +39,7 @@ input {
     font-size: 1rem;
 }
 
-button {
+.barra_busqueda button {
     background-color: #000;
     position: absolute;
     padding: 10px 15px;
@@ -52,7 +52,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.barra_busqueda button:hover {
     background-color: #1f467d;
 }
 
@@ -66,7 +66,8 @@ button:hover {
     margin-top: 5px;
 }
 
-.imagen {
+.imagen,
+.tipos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,14 +78,7 @@ button:hover {
 }
 
 .tipos {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 20px 20px 20px;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
 }
 
 .tipos div {
@@ -99,99 +93,28 @@ button:hover {
     color: #fff;
 }
 
-.tipo-bug {
-    background: rgb(87,118,22);
-    background: linear-gradient(115deg, rgba(87,118,22,1) 0%, rgba(129,170,44,1) 100%);
-}
-
-.tipo-dark {
-    background: rgb(79,61,49);
-    background: linear-gradient(115deg, rgba(79,61,49,1) 0%, rgba(112,88,72,1) 100%);
-}
-
-.tipo-dragon {
-    background: rgb(76,66,151);
-    background: linear-gradient(115deg, rgba(76,66,151,1) 0%, rgba(110,93,239,1) 100%);
-}
-
-.tipo-electric{
-    background: rgb(165,134,40);
-    background: linear-gradient(115deg, rgba(165,134,40,1) 0%, rgba(216,174,45,1) 100%);
-}
-
-.tipo-fairy {
-    background: rgb(166,106,166);
-    background: linear-gradient(115deg, rgba(166,106,166,1) 0%, rgba(213,148,213,1) 100%);
-}
-
-.tipo-fighting {
-    background: rgb(146,75,63);
-    background: linear-gradient(115deg, rgba(146,75,63,1) 0%, rgba(209,78,55,1) 100%);
-}
-
-.tipo-fire {
-    background: rgb(200,106,45);
-    background: linear-gradient(115deg, rgba(200,106,45,1) 0%, rgba(255,149,72,1) 100%);
-}
-
-.tipo-flying {
-    background: rgb(98,114,149);
-    background: linear-gradient(115deg, rgba(98,114,149,1) 0%, rgba(124,149,201,1) 100%);
-}
-
-.tipo-ghost {
-    background: rgb(81,81,133);
-    background: linear-gradient(115deg, rgba(81,81,133,1) 0%, rgba(112,112,179,1) 100%);
-}
-
-.tipo-grass {
-    background: rgb(44,115,37);
-    background: linear-gradient(115deg, rgba(44,115,37,1) 0%, rgba(64,194,53,1) 100%);
-}
-
-.tipo-ground {
-    background: rgb(162,141,78);
-    background: linear-gradient(115deg, rgba(162,141,78,1) 0%, rgba(190,166,92,1) 100%);
-}
-
-.tipo-ice {
-    background: rgb(89,157,191);
-    background: linear-gradient(115deg, rgba(89,157,191,1) 0%, rgba(125,212,255,1) 100%);
-}
-
-.tipo-normal {
-    background: rgb(93,100,106);
-    background: linear-gradient(115deg, rgba(93,100,106,1) 0%, rgba(122,132,141,1) 100%);
-}
-
-.tipo-poison {
-    background: rgb(85,33,108);
-    background: linear-gradient(115deg, rgba(85,33,108,1) 0%, rgba(143,75,173,1) 100%);
-}
-
-.tipo-psychic {
-    background: rgb(190,80,124);
-    background: linear-gradient(115deg, rgba(190,80,124,1) 0%, rgba(255,96,159,1) 100%);
-}
-
-.tipo-rock {
-    background: rgb(124,117,90);
-    background: linear-gradient(115deg, rgba(124,117,90,1) 0%, rgba(181,170,122,1) 100%);
-}
-
-.tipo-steel {
-    background: rgb(130,130,147);
-    background: linear-gradient(115deg, rgba(130,130,147,1) 0%, rgba(159,159,174,1) 100%);
-}
-
-.tipo-water {
-    background: rgb(56,117,179);
-    background: linear-gradient(115deg, rgba(56,117,179,1) 0%, rgba(82,168,255,1) 100%);
-}
+/* Tipos de Pokémon */
+.tipo-bug { background: linear-gradient(115deg, #577616 0%, #81aa2c 100%); }
+.tipo-dark { background: linear-gradient(115deg, #4f3d31 0%, #705848 100%); }
+.tipo-dragon { background: linear-gradient(115deg, #4c4297 0%, #6e5def 100%); }
+.tipo-electric { background: linear-gradient(115deg, #a58628 0%, #d8ae2d 100%); }
+.tipo-fairy { background: linear-gradient(115deg, #a66aa6 0%, #d594d5 100%); }
+.tipo-fighting { background: linear-gradient(115deg, #924b3f 0%, #d14e37 100%); }
+.tipo-fire { background: linear-gradient(115deg, #c86a2d 0%, #ff9548 100%); }
+.tipo-flying { background: linear-gradient(115deg, #627295 0%, #7c95c9 100%); }
+.tipo-ghost { background: linear-gradient(115deg, #515185 0%, #7070b3 100%); }
+.tipo-grass { background: linear-gradient(115deg, #2c7325 0%, #40c235 100%); }
+.tipo-ground { background: linear-gradient(115deg, #a28d4e 0%, #bea65c 100%); }
+.tipo-ice { background: linear-gradient(115deg, #599dbf 0%, #7dd4ff 100%); }
+.tipo-normal { background: linear-gradient(115deg, #5d646a 0%, #7a848d 100%); }
+.tipo-poison { background: linear-gradient(115deg, #55216c 0%, #8f4bad 100%); }
+.tipo-psychic { background: linear-gradient(115deg, #be507c 0%, #ff609f 100%); }
+.tipo-rock { background: linear-gradient(115deg, #7c755a 0%, #b5aa7a 100%); }
+.tipo-steel { background: linear-gradient(115deg, #828293 0%, #9f9fae 100%); }
+.tipo-water { background: linear-gradient(115deg, #3875b3 0%, #52a8ff 100%); }
 
 .silueta {
-    background: rgb(45,45,45);
-    background: linear-gradient(115deg, rgba(45,45,45,1) 0%, rgba(94,94,94,1) 100%);
+    background: linear-gradient(115deg, #2d2d2d 0%, #5e5e5e 100%);
 }
 
 .nombre {
@@ -215,4 +138,83 @@ button:hover {
 img {
     padding: 5px;
     width: 250px;
+}
+
+/* Botones generales (NO los de búsqueda) */
+button {
+    background-color: #000;
+    padding: 10px 15px;
+    border: none;
+    color: #f7f2ea;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #1f467d;
+}
+
+/* Botones debajo del formulario */
+.botones-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.botones-formulario button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.form-container {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 40px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.botones-formulario {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.botones-formulario button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
 }

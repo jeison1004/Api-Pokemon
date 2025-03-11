@@ -1,16 +1,10 @@
-import express from 'express';
+import express from 'express'; 
 import fs from 'fs';
+import cors from 'cors'; // Importa el paquete cors
 
-// Instanciamos un objeto express
-const app = express();
-
-// Middleware para parsear el cuerpo de las solicitudes
-app.use(express.json());
-
-// Necesitamos que escuche en ese puerto
-app.listen(4000, () => {
-  console.log(`Servidor escuchando en http://0.0.0.0:${4000}`);
-});
+const app = express(); 
+app.use(cors()); 
+app.use(express.json()); 
 
 // Función para leer datos del archivo pokemon.json
 const readData = () => {
@@ -23,7 +17,6 @@ const readData = () => {
   }
 };
 
-// Función para escribir datos en el archivo pokemon.json
 const writeData = (data) => {
   try {
     fs.writeFileSync('./pokemon.json', JSON.stringify(data, null, 2)); // Formato legible
@@ -52,14 +45,13 @@ app.get('/pokemon/:name', (req, res) => {
   }
 });
 
-// Agregar un nuevo Pokémon
 app.post('/pokemon', (req, res) => {
   const data = readData();
   const body = req.body;
 
   // Validar que el cuerpo de la solicitud tenga los campos necesarios
-  if (!body.name || !body.sprites || !body.abilities) {
-    return res.status(400).json({ message: 'Faltan campos obligatorios: name, sprites, abilities' });
+  if (!body.name || !body.sprites || !body.types) {
+    return res.status(400).json({ message: 'Faltan campos obligatorios: name, sprites, types' });
   }
 
   // Verificar si el Pokémon ya existe
@@ -72,7 +64,7 @@ app.post('/pokemon', (req, res) => {
   const newPokemon = {
     name: body.name,
     sprites: body.sprites,
-    abilities: body.abilities,
+    types: body.types, // Asegúrate de que el servidor también maneje los tipos correctamente
   };
 
   // Agregar el nuevo Pokémon al array
@@ -83,24 +75,54 @@ app.post('/pokemon', (req, res) => {
   res.status(201).json(newPokemon);
 });
 
+
 // Eliminar un Pokémon por nombre
 app.delete('/pokemon/:name', (req, res) => {
   const data = readData();
   const name = req.params.name;
-
-  // Buscar el índice del Pokémon
   const pokemonIndex = data.pokemon.findIndex((pokemon) => pokemon.name.toLowerCase() === name.toLowerCase());
-
-  // Si el Pokémon existe
   if (pokemonIndex !== -1) {
     // Eliminar el Pokémon del array
     data.pokemon.splice(pokemonIndex, 1);
     writeData(data);
-
-    // Responder con un mensaje de éxito
     res.json({ message: 'Pokemon eliminado correctamente' });
   } else {
-    // Si el Pokémon no existe, responder con un error
     res.status(404).json({ message: 'Pokemon no encontrado' });
   }
+});
+
+
+app.listen(4000, () => {
+  console.log(`Servidor escuchando en http://0.0.0.0:4000`);
+});
+
+app.patch('/pokemon/:name', (req, res) => {
+  const data = readData();
+  const name = req.params.name; 
+  const body = req.body;
+
+
+  if (!body.sprite && !body.types) {
+      return res.status(400).json({ message: 'Faltan campos para actualizar: sprites o types' });
+  }
+
+ 
+  const pokemonExistente = data.pokemon.find((pokemon) => pokemon.name.toLowerCase() === name.toLowerCase());
+  if (!pokemonExistente) {
+      return res.status(404).json({ message: 'Pokémon no encontrado' });
+  }
+
+  
+  if (body.sprites) {
+      pokemonExistente.sprites = body.sprites.json(); 
+  }
+  if (body.types) {
+      pokemonExistente.types = body.types.json(); 
+  }
+
+  
+  writeData(data);
+
+  
+  res.status(200).json(pokemonExistente);
 });
