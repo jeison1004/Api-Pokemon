@@ -5,6 +5,7 @@ import cors from 'cors'; // Importa el paquete cors
 const app = express(); 
 app.use(cors()); 
 app.use(express.json()); 
+//app.use(express.urlencoded({ extended: true }));
 
 // Función para leer datos del archivo pokemon.json
 const readData = () => {
@@ -98,7 +99,7 @@ app.listen(4000, () => {
 
 app.patch('/pokemon/:name', (req, res) => {
   const data = readData();
-  const name = req.params.name; 
+  const { nombre} = req.params.name; 
   const body = req.body;
 
 
@@ -107,7 +108,7 @@ app.patch('/pokemon/:name', (req, res) => {
   }
 
  
-  const pokemonExistente = data.pokemon.find((pokemon) => pokemon.name.toLowerCase() === name.toLowerCase());
+  const pokemonExistente = data.pokemon.find((pokemon) => pokemon.name.toLowerCase() === nombre.toLowerCase());
   if (!pokemonExistente) {
       return res.status(404).json({ message: 'Pokémon no encontrado' });
   }
