@@ -99,7 +99,7 @@ app.listen(4000, () => {
 
 app.patch('/pokemon/:name', (req, res) => {
   const data = readData();
-  const { nombre} = req.params.name; 
+  const { nombre} = req.params; 
   const body = req.body;
 
 
